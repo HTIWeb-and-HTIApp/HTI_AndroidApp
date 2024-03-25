@@ -53,7 +53,7 @@ fun LoginContent(
             Spacer(modifier = Modifier.height(20.dp))
             AuthButton(
                 onClick = { onClick() },
-                buttonColor = Color(0xff4F80FF),
+                buttonColor = Color(0xff14279B),
                 text = "LogIn",
                 modifier = Modifier
                     .shadow(elevation = 0.dp, shape = RoundedCornerShape(0.2f))
