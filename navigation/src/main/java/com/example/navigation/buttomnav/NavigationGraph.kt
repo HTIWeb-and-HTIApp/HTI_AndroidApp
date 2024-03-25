@@ -13,6 +13,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.authui.screen.LoginScreen
 import com.example.homeui.screen.HomeScreen
 import com.example.mycoursesui.screen.MyCoursesScreen
+import com.example.navigation.navigations.navigateToHome
 import com.example.servicesui.screen.ServicesScreen
 
 @Composable
@@ -23,9 +24,11 @@ fun NavigationGraph(navController: NavHostController) {
     val isUSerLogin = false
     val startDestination = if (isUSerLogin) "HomeScreen" else "LoginScreen"
 
+    val bottomNavItems = listOf("HomeScreen", "MyCoursesScreen", "ServicesScreen")
+
     Scaffold(
         bottomBar = {
-            if (currentRoute !in listOf("LoginScreen")) {
+            if (currentRoute in bottomNavItems) {
                 BottomNavigation(navController = navController)
             }
         }
