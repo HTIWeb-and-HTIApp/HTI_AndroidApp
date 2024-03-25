@@ -1,4 +1,4 @@
-package com.example.navigation.buttomnav
+package com.example.navigation.navigations
 
 import androidx.navigation.NavHostController
 

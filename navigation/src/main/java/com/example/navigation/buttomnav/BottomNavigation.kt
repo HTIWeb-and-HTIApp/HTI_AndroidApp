@@ -45,9 +45,12 @@ fun BottomNavigation(
                     navController.navigate(item.route) {
 
                         navController.graph.startDestinationRoute?.let { route ->
+
                             popUpTo(route) {
-                                saveState = true
-                                inclusive = true
+                                navController.popBackStack(
+                                    route = "HomeScreen",
+                                    inclusive = false
+                                )
                             }
                         }
                         launchSingleTop = true
