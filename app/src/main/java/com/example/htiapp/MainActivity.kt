@@ -9,11 +9,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.authui.screen.LoginScreen
-import com.example.homeui.screen.HomeScreen
 import com.example.htiapp.ui.theme.HtiAppTheme
 import com.example.navigation.buttomnav.MainScreenView
-import com.example.navigation.buttomnav.navigateToHome
 
 class MainActivity : ComponentActivity() {
 
@@ -28,9 +25,6 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-//                    LoginScreen(
-//                        navigateToHome = { navigateToHome(navController) }
-//                    )
                     MainScreenView()
                 }
             }
