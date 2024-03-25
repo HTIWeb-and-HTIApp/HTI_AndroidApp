@@ -10,22 +10,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
+import com.example.mycoursesui.componante.CoursesContent
+import com.example.mycoursesui.componante.CoursesLazyColumn
 
 @Composable
 fun MyCoursesScreen() {
-    Box(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(
-                text = "MyCoursesScreen",
-                color = Color.Black,
-                fontSize = 25.sp
-            )
-        }
-    }
+    CoursesContent()
 }
